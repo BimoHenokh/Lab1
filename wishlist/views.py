@@ -21,6 +21,8 @@ def show_wishlist(request):
     'nama': 'Kak Bimo',
     'last_login': request.COOKIES['last_login']
     }
+
+    print(data_barang_wishlist)
     return render(request, "wishlist.html", context)
 
 def receive_request(request):
